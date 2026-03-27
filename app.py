@@ -448,8 +448,7 @@ hr { border-color: var(--border) !important; }
 # ─────────────────────────────────────────────────────────
 #  定数
 # ─────────────────────────────────────────────────────────
-MASTER_JSON_PATH = os.path.join(os.path.dirname(__file__), "pediatric_master_full.json")
-
+MASTER_JSON_PATH = "pediatric_master_full.json"
 UNDERDOSE_LOWER_RATIO = 0.80
 WARNING_UPPER_RATIO   = 1.20
 
