@@ -6,7 +6,7 @@
 """
 
 import json
-import os
+import pathlib
 import re
 import unicodedata
 from dataclasses import dataclass, asdict
@@ -448,7 +448,7 @@ hr { border-color: var(--border) !important; }
 # ─────────────────────────────────────────────────────────
 #  定数
 # ─────────────────────────────────────────────────────────
-MASTER_JSON_PATH = "pediatric_master_full.json"
+MASTER_JSON_PATH = str(pathlib.Path(__file__).parent / "pediatric_master_full.json")
 UNDERDOSE_LOWER_RATIO = 0.80
 WARNING_UPPER_RATIO   = 1.20
 
